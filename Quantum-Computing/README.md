@@ -1,0 +1,2 @@
+Most of this class was math, but these were the programming assignments we completed; all involve connecting and executing code on an IBM quantum computer.
+My contribution to each assignment is detailed in each Jupyter Notebook.

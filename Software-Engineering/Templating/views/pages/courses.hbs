@@ -1,0 +1,30 @@
+{{> message}}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Course ID</th>
+      <th scope="col">Course Name</th>
+      <th scope="col">Credit Hours</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each courses}}
+    <tr>
+      <td>{{course_id}}</td>
+      <td>{{course_name}}</td>
+      <td>{{credit_hours}}</td>
+      <td>
+        <form action="/courses/add" method="post">
+          <input type="hidden" name="course_id" value={{course_id}}>
+          {{#if taken}}
+          <button style="background-color: white; border-color: gray; color: gray;" type="submit" class="btn btn-primary" disabled>Add</button>
+          {{else}}
+          <button style="background-color: white; border-color: rgb(0, 209, 0); color: rgb(0, 209, 0);" type="submit" class="btn btn-primary" name="ADD">Add</button>
+          {{/if}}
+        </form>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

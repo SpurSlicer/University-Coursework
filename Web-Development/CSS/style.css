@@ -1,0 +1,105 @@
+/* General styles - put these straight into your stylesheet */
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: 'Helvetica neue', Arial, 'sans serif';
+  font-size: 10px;
+  background-color: #ccc;
+}
+
+.card {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: red;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+}
+
+.card_custom {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: pink;
+  border: 0.2em solid purple;
+  border-radius: 1.5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card header, .card footer {
+  height: 30px;
+  padding: 10px;
+}
+
+.card_custom header, .card_custom footer {
+  height: 30px;
+  padding: 10px;
+}
+
+.card header {
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+.card_custom header {
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+.card footer {
+  background-image: linear-gradient(to top,rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
+}
+
+.card_custom footer {
+  background-image: linear-gradient(to top,rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
+}
+
+.card article img {
+  max-height: 100%;
+  float: right;
+}
+
+.card_custom article img {
+  max-height: 100%;
+  float: right;
+}
+
+.card header, .card footer {
+  height: 3em;
+  padding: 1em; 
+}
+
+.card_custom header, .card_custom footer {
+  height: 3em;
+  padding: 1em; 
+}
+
+h2, p {
+  margin: 0;
+}
+
+article {
+  height: 12em; 
+  background-color: rgba(0,0,0,0.25);
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.6em; 
+}
+
+footer p {
+  font-size: 1.5em;
+  line-height: 1.8em;
+}
+
+article p {
+  padding: 1em;
+  line-height: 1.3em;
+  color: gainsboro;
+}

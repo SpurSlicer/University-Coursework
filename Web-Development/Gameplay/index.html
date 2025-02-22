@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="./script.js" defer></script>
+    <title>Volume Darts</title>
+</head>
+<body>
+    <h1 id="msg"><solid>Through a dart to change the volume!</solid></h1>
+    <div id="rotation-circle"></div>
+    <canvas id="dart-board" width="500px" height="500px"></canvas>
+    <div id="slider-bk"></div>
+    <div id="slider-bar"></div>
+    <table id="color_table">
+        <tr>
+            <th>Color</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td style="background-color: #FF9494;"></td>
+            <td>+7</td>
+        </tr>
+        <tr>
+            <td style="background-color: #FFB694;"></td>
+            <td>-12</td>
+        </tr>
+        <tr>
+            <td style="background-color: #EEFF94;"></td>
+            <td>+5</td>
+        </tr>
+        <tr>
+            <td style="background-color: #9FFF94;"></td>
+            <td>-2</td>
+        </tr>
+        <tr>
+            <td style="background-color: #94F9FF;"></td>
+            <td>+6</td>
+        </tr>
+        <tr>
+            <td style="background-color: #9494FF;"></td>
+            <td>-7</td>
+        </tr>
+        <tr>
+            <td style="background-color: #C194FF;"></td>
+            <td>+12</td>
+        </tr>
+        <tr>
+            <td style="background-color: #FF94EE;"></td>
+            <td>+2</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>+0</td>
+        </tr>
+        <tr>
+            <td style="background-color: #CACACA;"></td>
+            <td>x2</td>
+        </tr>
+        <tr>
+            <td style="background-color: #909090;"></td>
+            <td>/2</td>
+        </tr>
+        <tr>
+            <td style="background-color: #4F4F4F;"></td>
+            <td>+100</td>
+        </tr>
+        <tr>
+            <td style="background-color: #000000;"></td>
+            <td>x0</td>
+        </tr>
+    </table>
+    <div id="volume-bk"></div>
+    <div id="volume-bar"></div>
+    <h3 id="volume-id">Volume</h3>
+    <h1 id="volume-amt"></h1>
+    <div id="dart"></div>
+</body>
+</html>

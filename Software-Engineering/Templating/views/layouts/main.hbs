@@ -1,0 +1,63 @@
+<!-- TODO: Add the head.hbs partial here -->
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+    <!-- TODO: Include the `title` partial here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    {{#if first_name}}
+    <title> {{first_name}} - Software Engineering Class </title>
+    {{else}}
+    <title> Software Engineering Class </title>
+    {{/if}}
+</head>
+<body class="h-100 d-flex flex-column">
+<!-- TODO: Add the nav.hbs partial here -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+      <a class="navbar-brand" href="/"></a>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <!-- TODO: For 'Home', Add a <a> tag with class="nav-link" and href='/' API that navigates to home page if logged in, or login page if not -->
+          <a class="nav-link" href='/'>Home</a>
+        </li>
+        <li class="nav-item">
+          <!-- TODO: For 'Courses', Add a <a> tag with class="nav-link" and href='/courses' API that navigates to courses page if logged in, or login page if not -->
+          <a class="nav-link" href='/courses'>Courses</a>
+        </li>
+        <li class="nav-item">
+          <!-- TODO: For 'Log out', Add a <a> tag with class="nav-link" and href='/logout' API that navigates to the logout page -->
+          <a class="nav-link" href='/logout' >Log out</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar-collapse collapse order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="#">
+              <!-- TODO: Add the email id which is passed using: {{ variable_name }}. This will display the email id on the top right corner of the page -->
+              {{ email }}
+              </a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+{{{body}}}
+<!-- TODO: Add the footer.hbs partial here -->
+<footer class="text-center text-muted w-100 mt-auto fixed-bottom">
+    <!-- TODO: Add the <script><script /> tag to include bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <p>
+        &copy; Software engineering class
+    </p>
+</footer>
+</body>
+</html>

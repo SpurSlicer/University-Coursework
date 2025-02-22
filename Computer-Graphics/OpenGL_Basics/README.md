@@ -1,0 +1,17 @@
+### Controls
+- **ESC**: exits the program
+- **0**: resets all lorenz parameters, view angles, iter, and zoom dimension to defaults
+- **LEFT/RIGHT/UP/DOWN**: rotates model with respect to origin in the direction indicated by the arrow pressed
+- **w**: decreases zoom by 0.01
+- **W**: increases zoom by 0.01
+- **s**: decreases s parameter by 1 
+- **S**: increases s parameter by 1 
+- **b**: decreases b parameter by 1 
+- **B**: increases b parameter by 1 
+- **r**: decreases r parameter by 1 
+- **R**: increases r parameter by 1 
+    - __Note:__ iter is the number of loop iterations
+- **-**: decreases iter parameter by 1000 
+- **=**: increases iter parameter by 1000 
+- **_**: decreases iter parameter by 10000 
+- **+**: increases iter parameter by 10000 

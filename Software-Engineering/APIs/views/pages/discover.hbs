@@ -1,0 +1,20 @@
+{{> message}}
+
+<div class="container">
+
+  <div class="col">
+    {{#each events}}
+    <br>
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src={{images.0.url}} alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{name}}</h5>
+            <p class="card-text">From {{dates.start.dateTime}}<br>To {{dates.end.dateTime}}</p>
+            <a href={{url}} class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+    </div> 
+</div>

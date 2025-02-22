@@ -1,0 +1,128 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    background-image: url(../_Images/homework6_bk.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stage h1 {
+    position: fixed;
+    top: 20px;
+    left: 300px;
+    width: 150px;
+    padding: 20px;
+    margin: 20px;
+    background-color: purple;
+    border-style: solid;
+    text-align: center;
+    border-image: linear-gradient(to bottom left, 
+        rgba(255, 0,  0, 1) 20%, 
+        rgb(255, 174, 0) 40%, 
+        rgb(0, 255, 4) 60%, 
+        rgb(13, 0, 255) 80%, 
+        rgb(217, 0, 255) 100%) 
+        1;
+}
+.game h1 {
+    position: fixed;
+    left: 530px;
+    top: 20px;
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    font-size: 30px;
+    background-color: purple;
+    border-style: solid;
+    text-align: center;
+    border-image: linear-gradient(to bottom left, 
+        rgba(255, 0,  0, 1) 20%, 
+        rgb(255, 174, 0) 40%, 
+        rgb(0, 255, 4) 60%, 
+        rgb(13, 0, 255) 80%, 
+        rgb(217, 0, 255) 100%) 
+        1;
+}
+.circle1 {
+    position: fixed;
+    padding: 80px;
+    left:265px;
+    top:750px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 100%;
+}
+.circle1 h1 {
+    position: fixed;
+    border-style: solid;
+    border-color: red;
+    width: 120px;
+    bottom: 165px;
+    left: 280px;
+    padding:10px;
+    text-align: center;
+    font-size: 20px;
+}
+.circle2 {
+    position: fixed;
+    padding: 40px;
+    left:1002px;
+    top:292px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 100%;
+}
+.circle2 h1 {
+    position: fixed;
+    border-style: solid;
+    border-color: red;
+    width: 80px;
+    top: 231px;
+    left: 992px;
+    padding:10px;
+    text-align: center;
+    font-size: 20px;
+}
+.stats {
+    position: fixed;
+    left: 1280px;
+    top: 550px;
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 30px;
+    background-color: purple;
+    border-style: solid;
+    text-align: center;
+    border-image: linear-gradient(to bottom left, 
+        rgba(255, 0,  0, 1) 20%, 
+        rgb(255, 174, 0) 40%, 
+        rgb(0, 255, 4) 60%, 
+        rgb(13, 0, 255) 80%, 
+        rgb(217, 0, 255) 100%) 
+        1;
+}
+.stats h1 {
+    font-size: 30px;
+}
+
+.stats hr {
+    border-image: linear-gradient(to left, 
+    rgba(255, 0,  0, 1) 20%, 
+    rgb(255, 174, 0) 40%, 
+    rgb(0, 255, 4) 60%, 
+    rgb(13, 0, 255) 80%, 
+    rgb(217, 0, 255) 100%) 
+    1;
+    margin: 5px
+}
+.stats ul {
+    list-style-type: "⭐ ";
+    padding-right: 10px;
+}
+.stats li {
+    text-align: left;
+    font-size: 20px;
+    padding-block: 10px;
+}

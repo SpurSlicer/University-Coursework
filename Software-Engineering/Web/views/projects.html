@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="navbar">
+            <div class="container-fluid">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./hobbies.html">Hobbies</a>
+                </li>		
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./projects.html">Projects</a>
+                </li>
+            </ul>		
+            <div class="float-left">
+                <img src="../resources/img/icon.ico" alt="random icon" width="20" height="20" />
+            </div>
+            </div>
+        </nav>
+        <br>
+    </header>
+    <main class="flex-shrink-0">
+        <div class="container main" id="projects">
+          <div id="carouselProjects" class="carousel slide">
+            <div class="carousel-indicators" id="carousel-bottom-indicators">
+              <button type="button" data-bs-target="#carouselProjects" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselProjects" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselProjects" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" id="carousel-item-1">
+                <img src="../resources/img/car_1.jpg" class="d-block w-100" alt="GTK4 project">
+                <div class="carousel-caption d-none d-md-block" style="background-color: rgba(51,51,51,0.7); border-color: black;">
+                  <h5>GTK4 Projects</h5>
+                  <p>This is a base program that acts as an app selector.</p>
+                </div>
+              </div>
+              <div class="carousel-item" id="carousel-item-2">
+                <img src="../resources/img/car_2.jpg" class="d-block w-100" alt="Video game modding project">
+                <div class="carousel-caption d-none d-md-block" style="background-color: rgba(51,51,51,0.7); border-color: black;">
+                  <h5>Modding</h5>
+                  <p>Here is the intro screen to a video game modding project I've been working on.</p>
+                </div>
+              </div>
+              <div class="carousel-item" id="carousel-item-3">
+                <img src="../resources/img/car_3.jpg" class="d-block w-100" alt="Neurology research">
+                <div class="carousel-caption d-none d-md-block" style="background-color: rgba(51,51,51,0.7); border-color: black;">
+                  <h5>Neurology Research</h5>
+                  <p>Here is a screen from a neurology research project I'm managing.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjects" data-bs-slide="prev" id="carousel-prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProjects" data-bs-slide="next" id="carousel-next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
