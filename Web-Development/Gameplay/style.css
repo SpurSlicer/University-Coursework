@@ -1,0 +1,132 @@
+html {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background: radial-gradient(circle, rgba(128,0,128,1) 27%, #5c0074 80%);
+}
+
+#msg {
+    background-image: linear-gradient(to left, 
+    rgba(255, 0,  0, 1) 20%, 
+    rgb(255, 174, 0) 40%, 
+    rgb(0, 255, 4) 60%, 
+    rgb(13, 0, 255) 80%, 
+    rgb(217, 0, 255) 100%);     
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+
+#dart {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: -1000px;
+    right: 1000px;
+    background-size: 50px 50px;
+    background-image: url(https://pngimg.com/uploads/darts/darts_PNG22.png);
+}
+
+#slider-bar {
+    background-color: red;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-width:3px;
+    border-color: black;
+    position: fixed;
+    width: 40px;
+    height: 60vh;
+    left: 10px;
+    bottom: 20vh;
+}
+
+#slider-bk {
+    background-color: rgba(0 0 0 0);
+    border-style: solid;
+    border-width:3px;
+    border-color: black;
+    position: fixed;
+    width: 40px;
+    height: 60vh;
+    left: 10px;
+    bottom: 20vh;
+}
+
+#volume-bar {
+    background-color: rgba(0 0 0 0);
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to left, 
+    rgba(255, 0,  0, 1) 20%, 
+    rgb(255, 174, 0) 40%, 
+    rgb(0, 255, 4) 60%, 
+    rgb(13, 0, 255) 80%, 
+    rgb(217, 0, 255) 100%); 
+    border-top-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-width:3px;
+    border-color: black;
+    position: fixed;
+    width: 60vw;
+    height: 40px;
+    left: 10px;
+    bottom: 20px;
+}
+
+#volume-bk {
+    border-style: solid;
+    border-color: black;
+    border-width:3px;
+    position: fixed;
+    width: 60vw;
+    height: 40px;
+    left: 10px;
+    bottom: 20px;
+}
+
+#volume-id {
+    color:white;
+    position: fixed;
+    left: 12px;
+    bottom: 47px;
+}
+
+#volume-amt {
+    color:white;
+    position: fixed;
+    left: 15px;
+    bottom: 3px;
+}
+
+#color_table {
+    color: white;
+    position: fixed;
+    right: 10px;
+    top: 20vh;
+    align-items: center;
+}
+
+#dart-board {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(-100px + 20vh);
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    #msg {
+        margin-top: 1px;
+    }
+    #color_table {
+        top: 50vh;
+        align-items: center;
+    }
+    #dart-board {
+        scale: 0.6;
+        margin-top: calc(-332px + 30vh);
+        margin-left: calc(-232px + 50vw);
+    }
+}

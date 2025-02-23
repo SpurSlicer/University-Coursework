@@ -1,0 +1,62 @@
+html {
+  background-color: purple;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+  font-family: helvetica, arial, sans-serif;
+  text-align: center;
+  background-color: rgb(53, 0, 53);
+  color: white;
+  padding: 10px;
+}
+
+body {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.full-img {
+  position: relative;
+  display: block;
+  width: 640px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 400px;
+  background-color: rgba(0,0,0,0);
+}
+
+button {
+  border: 0;
+  background: rgba(150,150,150,0.6);
+  text-shadow: 1px 1px 1px white;
+  border: 1px solid #999;
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+}
+
+.thumb-bar img {
+  display: block;
+  width: 20%;
+  float: left;
+  cursor: pointer;
+}
+
+hr {
+  border-image: linear-gradient( to right,
+  rgba(255, 0,  0, 1) 20%, 
+  rgb(255, 174, 0) 40%, 
+  rgb(0, 255, 4) 60%, 
+  rgb(13, 0, 255) 80%, 
+  rgb(217, 0, 255) 100%)
+  1;
+  border-width: 2px;
+}

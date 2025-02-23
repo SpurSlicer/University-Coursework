@@ -1,0 +1,86 @@
+html {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(53, 0, 53);
+}
+header {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    background-color: blue;
+    background-image: linear-gradient(to bottom left, 
+        rgba(255, 0,  0, 1) 20%, 
+        rgb(255, 174, 0) 40%, 
+        rgb(0, 255, 4) 60%, 
+        rgb(13, 0, 255) 80%, 
+        rgb(217, 0, 255) 100%);
+    border-style: solid;
+    border-color: purple;
+    color: rgb(53, 0, 53);
+}
+
+nav{
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    height:20px;
+    border-style: solid;
+    border-color: purple;
+    background-color: purple;
+    position:sticky;
+}
+
+nav a {
+    width:10vw;
+    margin: 0;
+    text-align: center;
+}
+
+article {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2vh;
+    display:flex;
+}
+
+article img {
+    margin-right: 2vw;
+    margin-top: 2vh;
+    float: left;
+    transition: transform 150ms;
+}
+
+article img:hover {
+    transform: rotate(-5deg);
+}
+
+nav a {
+    transition: color 100ms, font-size 100ms;
+}
+
+nav a:hover {
+    color: rgb(53, 0, 53);
+    font-size: 18px;
+}
+
+footer img {
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+@keyframes spin {
+    to {
+        transform: rotateY(0deg);
+    }
+    from {
+        transform: rotateY(360deg);
+    }
+}
