@@ -17,7 +17,7 @@ const altnames = {
 }
 
 /* Looping through images */
-const filepath = '../_Images/';
+const filepath = './';
 filenames.forEach(filename => {
     const newImage = document.createElement('img');
     newImage.setAttribute('src', filepath+filename);
